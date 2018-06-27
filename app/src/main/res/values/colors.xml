@@ -5,11 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="btnPressed">#EB7676</color>
     <color name="btnPrimary">#DA0101</color>
-    <color name="white">#ffffff</color>
-    <color name="gray">#7E7E7E</color>
-    <color name="black">#000000</color>
-    <color name="red">#DA0101</color>
-    <color name="inputText">#D8D8D8</color>
     <color name="lineNormal">#ACACAC</color>
     <color name="lineError">#FF1F1F</color>
     <color name="lineSucess">#65BE30</color>
