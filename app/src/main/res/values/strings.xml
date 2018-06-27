@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Test Anroid Java</string>
+    <string name="btnTab1">Investimento</string>
+    <string name="btnTab2">Contato</string>
+</resources>
