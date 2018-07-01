@@ -10,5 +10,9 @@
         <item name="colorControlActivated">@color/lineSucess</item>
         <item name="colorControlHighlight">@color/lineError</item>
     </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 </resources>

@@ -3,8 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="btnPressed">#EB7676</color>
-    <color name="btnPrimary">#DA0101</color>
+    <color name="btnPressed">#e86d6d</color>
+    <color name="btnPrimary">#ff0000</color>
     <color name="lineNormal">#ACACAC</color>
     <color name="lineError">#FF1F1F</color>
     <color name="lineSucess">#65BE30</color>
