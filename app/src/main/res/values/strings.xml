@@ -2,4 +2,7 @@
     <string name="app_name">Test Anroid Java</string>
     <string name="btnTab1">Investimento</string>
     <string name="btnTab2">Contato</string>
+    <string name="mensagem_enviada_n_com_sucesso">Mensagem enviada  com sucesso :)</string>
+    <string name="enviar_nova_mensagem">Enviar nova mensagem</string>
+    <string name="obrigado">Obrigado!</string>
 </resources>

@@ -8,4 +8,11 @@
     <color name="lineNormal">#ACACAC</color>
     <color name="lineError">#FF1F1F</color>
     <color name="lineSucess">#65BE30</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="risk1">#50f442</color>
+    <color name="risk2">#319b28</color>
+    <color name="risk3">#c0ce2b</color>
+    <color name="risk4">#ce7f2a</color>
+    <color name="risk5">#ce3229</color>
 </resources>

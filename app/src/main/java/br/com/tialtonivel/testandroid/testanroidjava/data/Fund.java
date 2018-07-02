@@ -1,120 +1,63 @@
 package br.com.tialtonivel.testandroid.testanroidjava.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.Collection;
 import java.util.List;
 
 public class Fund {
+    public Screen screen;
 
-    private Screen screen;
+    public String toString() {
+        return String.format("title:%s,fundName:%s",
+                screen.title, screen.fundName);
+    }
 
-    public Screen getScreen() { return screen; }
+    public static class Screen {
+        public String title;
+        public String fundName;
+        public String whatIs;
+        public String definition;
+        public String riskTitle;
+        public int risk;
+        public String infoTitle;
+        public MoreInfo moreInfo;
+        public List<Info> info;
+        public List<Info> downInfo;
 
-    public void setScreen(Screen screen) { this.screen = screen; }
+        public static class Info {
+            public String name;
+            public String data;
 
-    public class Screen {
+            public Info() {
 
-        private String title;
-        private String fundName;
-        private String whatIs;
-        private String definition;
-        private String riskTitle;
-        private int risk;
-        private String infoTitle;
-        private MoreInfo moreInfo;
-        private List<Info> info;
-        private List<Info> Infos;
-        private Screen screen;
+            }
 
-        public String getTitle() { return title; }
-
-        public void setTitle(String title) { this.title = title; }
-
-        public String getFundName() { return fundName; }
-
-        public void setFundName(String fundName) { this.fundName = fundName; }
-
-        public String getWhatIs() { return whatIs; }
-
-        public void setWhatIs(String whatIs) { this.whatIs = whatIs; }
-
-        public String getDefinition() { return definition; }
-
-        public void setDefinition(String definition) { this.definition = definition; }
-
-        public String getRiskTitle() { return riskTitle; }
-
-        public void setRiskTitle(String riskTitle) { this.riskTitle = riskTitle; }
-
-        public int getRisk() { return risk; }
-
-        public void setRisk(int risk) { this.risk = risk; }
-
-        public String getInfoTitle() { return infoTitle; }
-
-        public void setInfoTitle(String infoTitle) { this.infoTitle = infoTitle; }
-
-        public MoreInfo getMoreInfo() { return moreInfo; }
-
-        public void setMoreInfo(MoreInfo moreInfo) { this.moreInfo = moreInfo; }
-
-        public List<Info> getInfo() { return info; }
-
-        public void setInfo(List<Info> info) { this.info = info; }
-
-        public List<Info> getInfos() { return Infos; }
-
-        public void setInfos(List<Info> Infos) { this.Infos = Infos; }
-
-        public class MoreInfo {
-
-            private Investiment month;
-            private Investiment year;
-            private Investiment months12;
-
-            public Investiment getMonth() { return month; }
-
-            public void setMonth(Investiment month) { this.month = month; }
-
-            public Investiment getYear() { return year; }
-
-            public void setYear(Investiment year) { this.year = year; }
-
-            public Investiment getMonths12() { return months12; }
-
-            public void setMonths12(Investiment months12) { this.months12 = months12; }
-
-            public class Investiment {
-
-                private double fund;
-                private double CDI;
-
-                public double getFund() { return fund; }
-
-                public void setFund(double fund) { this.fund = fund; }
-
-                public double getCDI() { return CDI; }
-
-                public void setCDI(double CDI) { this.CDI = CDI; }
+            public Info(@JsonProperty("name") String name, @JsonProperty("data") String data) {
+                this.name = name;
+                this.data = data;
             }
         }
 
-        public class Info {
+        public static class MoreInfo {
+            public Inv month;
+            public Inv year;
 
-            private String name;
-            private String data;
+            @JsonProperty("12months")
+            public Inv months12;
 
-            public String getName() { return name; }
-
-            public void setName(String name) { this.name = name; }
-
-            public String getData() { return data; }
-
-            public void setData(String data) { this.data = data; }
+            /*public MoreInfo(@JsonProperty("month") String month, @JsonProperty("year") String year, @JsonProperty("12months") String months12) {
+                this.name=name;
+                this.data=data;
+            }*/
+            public class Inv {
+                public double fund;
+                public double CDI;
+            }
         }
-        public Screen getScreen() { return screen; }
 
-        public void setScreen(Screen screen) { this.screen = screen; }
 
-        public String[] titles() {
+        public String[] getTexts() {
 
             return new String[]{
                     title,
@@ -125,4 +68,5 @@ public class Fund {
             };
         }
     }
+
 }
